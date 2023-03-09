@@ -2,7 +2,7 @@ package estructuras;
 
 import java.util.Scanner;
 
-public class doWhile {
+public class DoWhile {
 
     public static void main(String[] args) {
         byte opt = 0;
