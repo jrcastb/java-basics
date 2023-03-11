@@ -11,7 +11,7 @@ public class Lista {
     public static void main(String[] args) {
 
         //ArrayList
-        List<String> names = new ArrayList<>();
+        /*List<String> names = new ArrayList<>();
         names.add("Jose");
         names.add("Julian");
         names.add("Carlos");
@@ -57,7 +57,48 @@ public class Lista {
         pila.push("Ramiro");
         System.out.println(pila);
         System.out.println(pila.peek());
-        System.out.println(pila.firstElement());
+        System.out.println(pila.firstElement());*/
+
+        /**
+         *  Palindroma -> reconocer
+         *  aerea
+         *  ana
+         *  oso
+         *  oro
+         *  Responder si dada una palabra esta es palindroma o no haciendo uso de stacks
+         *  Crear la función esPalindromo(String word);
+         * */
+
+        Stack<Character> stack = new Stack<>();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("=============INICIO DEL PROGRAMA============");
+        String word = scanner.nextLine().toLowerCase();
+
+        for (int i = 0; i < word.length(); i++) {
+            stack.push(word.charAt(i));
+        }
+
+        System.out.println(stack);//O(n)
+
+        String reverseWord = "";
+        while (!stack.empty()){
+            reverseWord += stack.pop();
+        }
+
+        System.out.println(reverseWord);
+        
+        String out = "";
+        out = word.equals(reverseWord) ? "La palabra es palindroma" : "La palabra no es palindroma";
+
+        System.out.println(out);
+        
+        /*if (word.equals(reverseWord)){
+            System.out.println("La palabra es palindroma");
+        }else {
+            System.out.println("La palabra no es palindroma");
+        }*/
+
+
 
     }
 }
