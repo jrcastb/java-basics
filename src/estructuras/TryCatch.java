@@ -1,5 +1,7 @@
 package estructuras;
 
+import java.util.*;
+
 public class TryCatch {
 
     public static void main(String[] args) {
@@ -15,5 +17,7 @@ public class TryCatch {
         int numero = 5;
         System.out.println(numbers);
 
+
     }
 }
+
