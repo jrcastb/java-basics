@@ -11,7 +11,7 @@ public class Lista {
     public static void main(String[] args) {
 
         //ArrayList
-        /*List<String> names = new ArrayList<>();
+        List<String> names = new ArrayList<>();
         names.add("Jose");
         names.add("Julian");
         names.add("Carlos");
@@ -57,7 +57,7 @@ public class Lista {
         pila.push("Ramiro");
         System.out.println(pila);
         System.out.println(pila.peek());
-        System.out.println(pila.firstElement());*/
+        System.out.println(pila.firstElement());
 
         /**
          *  Palindroma -> reconocer
