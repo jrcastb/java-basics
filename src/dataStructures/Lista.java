@@ -98,7 +98,5 @@ public class Lista {
             System.out.println("La palabra no es palindroma");
         }*/
 
-
-
     }
 }
